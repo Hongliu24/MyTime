@@ -31,7 +31,7 @@ public class Card {
         return descrip;
     }
     public String getRank() {
-        String rank = shorthand.substring(shorthand.length() - 1);
+        String rank = shorthand.substring(0, shorthand.length() - 1);
         return switch (rank) {
             case "A" -> "Ace";
             case "2" -> "Two";
@@ -46,6 +46,7 @@ public class Card {
             case "J" -> "Jack";
             case "K" -> "King";
             case "Q" -> "Queen";
+
             default -> UNKNOWN;
         };
     }
