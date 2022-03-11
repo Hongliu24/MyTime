@@ -24,7 +24,7 @@ public class MyTime {
             int hours = difference / 60;
             int mins = difference % 60;
 
-            System.out.println(hours + "hour(s)" + mins + "minute(s)");
+            System.out.println(hours + " hour(s) " + mins + " minute(s)");
 
 
         }
